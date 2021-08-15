@@ -1,0 +1,22 @@
+key: "" ##Set this to the key you get!
+##Don't touch anything bellow.
+Placeholders:
+  ServerName:
+    Value: "Advanced setups, please run /setup to get started!"
+    Material: NETHER_STAR
+    Name: "&6Server Name"
+  Prefix:
+    Value: "Advanced setups, please run /setup to get started!"
+    Material: NETHER_STAR
+    Name: "&aServer Prefix"
+GuiSettings:
+  Title: "ServerSetups.net Assist"
+  PlaceholderId: "ServerSetups"
+  PlaceholderSet: "&eYou are setting the %placeholder% placeholder!"
+  PlaceholderDone: "&eYou set the %placeholder% placeholder to %set-to%" ##Placeholders: %placeholder%, %set-to%
+  Previous:
+    Material: PAPER
+    Name: "&c&lPrevious"
+  Next:
+    Material: PAPER
+    Name: "&c&lNext"

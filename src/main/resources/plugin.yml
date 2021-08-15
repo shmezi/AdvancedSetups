@@ -1,0 +1,15 @@
+name: AdvancedSetups
+version: ${project.version}
+main: me.alexirving.plugin.AdvancedSetups
+depend: [PlaceholderAPI]
+api-version: 1.13
+commands:
+  setup:
+    permission: advancedsetups.setup
+  advancedsetupsreload:
+    aliases:
+      - serversetups-reload
+      - ss-reload
+      - asreload
+      - as-reload
+    permission: advancedsetups.reload
