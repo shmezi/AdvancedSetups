@@ -1,15 +1,16 @@
 name: AdvancedSetups
-version: ${project.version}
+version: 1.0
+author: AlexIrving
 main: me.alexirving.plugin.AdvancedSetups
 depend: [PlaceholderAPI]
 api-version: 1.13
 commands:
   setup:
     permission: advancedsetups.setup
+    usage: /setup - Main command to setup server!
   advancedsetupsreload:
     aliases:
-      - serversetups-reload
-      - ss-reload
       - asreload
       - as-reload
     permission: advancedsetups.reload
+    usage: /as-reload - Reload Setup config, Not useful in most situations.

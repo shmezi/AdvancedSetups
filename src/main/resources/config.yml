@@ -1,14 +1,14 @@
-key: "" ##Set this to the key you get!
 ##Don't touch anything bellow.
 Placeholders:
   ServerName:
+    GUI:
+      Material: NETHER_STAR
+      Name: "&6Server Name"
+    DATA:
+      Type: FILE #Types: PLACEHOLDER / FILE
+      File: "/plugins/TabList/tablist.yml"
+      Variable: "header"
     Value: "Advanced setups, please run /setup to get started!"
-    Material: NETHER_STAR
-    Name: "&6Server Name"
-  Prefix:
-    Value: "Advanced setups, please run /setup to get started!"
-    Material: NETHER_STAR
-    Name: "&aServer Prefix"
 GuiSettings:
   Title: "ServerSetups.net Assist"
   PlaceholderId: "ServerSetups"

@@ -1,3 +1,9 @@
+/*
+ * Copyright (c) 2021. Alex Irving. (Alexirving992@gmail.com)
+ * All contents of this project are copyrights of Alex Irving.
+ *
+ * Any modification, distribution or any form of copying is strictly prohibited without an explicit document showing otherwise!
+ */
 package me.alexirving.plugin.commands;
 
 import dev.triumphteam.gui.builder.item.ItemBuilder;
@@ -52,10 +58,11 @@ public class Setup implements CommandExecutor {
         ItemBuilder builder =
             ItemBuilder.from(
                     Material.matchMaterial(
-                        config.getString("Placeholders." + placeholder + ".Material")))
+                        config.getString("Placeholders." + placeholder + ".GUI.Material")))
                 .name(
                     LegacyComponentSerializer.legacyAmpersand()
-                        .deserialize(config.getString("Placeholders." + placeholder + ".Name")));
+                        .deserialize(
+                            config.getString("Placeholders." + placeholder + ".GUI.Name")));
         gui.addItem(
             builder.asGuiItem(
                 event -> {

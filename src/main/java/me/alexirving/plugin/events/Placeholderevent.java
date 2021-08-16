@@ -1,3 +1,9 @@
+/*
+ * Copyright (c) 2021. Alex Irving. (Alexirving992@gmail.com)
+ * All contents of this project are copyrights of Alex Irving.
+ *
+ * Any modification, distribution or any form of copying is strictly prohibited without an explicit document showing otherwise!
+ */
 package me.alexirving.plugin.events;
 
 import me.alexirving.plugin.AdvancedSetups;
@@ -28,8 +34,9 @@ public class Placeholderevent extends PlaceholderExpansion {
   public String onRequest(OfflinePlayer player, String param) {
     String finalPlaceholder = "Error 404 Placeholder not found!";
     for (String placeholder : config.getConfigurationSection("Placeholders").getKeys(false)) {
-      if (param.equals(placeholder)) {
-        finalPlaceholder = config.getString("Placeholders." + placeholder + ".Value");
+      if (param.equals(placeholder)
+          && config.get("Placeholders." + placeholder + "DATA.Type").equals("PLACEHOLDER")) {
+        finalPlaceholder = config.getString("Placeholders." + placeholder + "DATA.Value");
       }
     }
     return finalPlaceholder;

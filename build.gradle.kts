@@ -1,6 +1,7 @@
 plugins {
     java
     id("com.github.johnrengelman.shadow") version "7.0.0"
+
 }
 
 group = "me.alexirving.plugin"
@@ -21,6 +22,7 @@ dependencies {
     implementation("dev.triumphteam", "triumph-gui", "3.0.3")
     compileOnly("org.spigotmc", "spigot-api", "1.8.8-R0.1-SNAPSHOT")
     compileOnly("me.clip", "placeholderapi", "2.10.10")
+
 }
 
 tasks.withType<com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar> {
